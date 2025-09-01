@@ -1,0 +1,162 @@
+/* ============================
+   FONT IMPORTS
+============================ */
+@font-face {
+  font-family: 'Outfit';
+  src: url('recipe-page-main/recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'YoungSerif';
+  src: url('recipe-page-main/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+/* ============================
+   RESET & GLOBAL STYLES
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(30, 10%, 34%);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+#main-page {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 740px;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* ============================
+   HEADINGS
+============================ */
+h1 {
+  font-family: 'YoungSerif', serif;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: hsl(24, 5%, 18%);
+}
+
+h3 {
+  font-family: 'YoungSerif', serif;
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  color: hsl(14, 45%, 36%);
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: hsl(332, 51%, 32%);
+}
+
+/* ============================
+   IMAGE
+============================ */
+#img-div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ============================
+   FIGCAPTION
+============================ */
+#img-caption {
+  margin: 15px 0 25px;
+  color: hsl(30, 10%, 34%);
+}
+
+/* ============================
+   PREPARATION BOX
+============================ */
+#preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 20px 0;
+}
+
+#preparation-time ul {
+  margin: 10px 20px;
+  list-style: disc;
+}
+
+#preparation-time li {
+  margin-bottom: 8px;
+  color: hsl(30, 10%, 34%);
+}
+
+/* ============================
+   LISTS
+============================ */
+ul, ol {
+  margin: 10px 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* ============================
+   SEPARATORS
+============================ */
+hr {
+  border: none;
+  border-top: 1px solid hsl(30, 18%, 87%);
+  margin: 25px 0;
+}
+
+/* ============================
+   TABLE
+============================ */
+#nutrition-info {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+#nutrition-info td {
+  padding: 12px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+#nutrition-info td:first-child {
+  color: hsl(30, 10%, 34%);
+}
+
+#nutrition-info td:last-child {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  #main-page {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}
